@@ -3,6 +3,7 @@ from pendulum import datetime
 import random
 
 #@dag(start_date=datetime(2022, 12, 20), schedule="@daily", catchup=False)
+@dag
 def simple_xcom_dag():
     @task
     def show_xcom():
